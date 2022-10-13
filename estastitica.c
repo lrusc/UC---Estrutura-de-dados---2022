@@ -33,10 +33,11 @@ int main () {
       sum += num[i];        /* Soma de N*/
         
       avg = sum/n;         /* Média */
-            
-      variance += pow((num[i] - avg),2)/n;     /* Variância */    
-      
-      std_deviation = sqrt(variance);       /* Desvio padrão */
+
+     variance += (num[i]-avg)*(num[i]-avg);     /* Variância */ 
+
+     std_deviation = sqrtf(variance/n);     /* Desvio padrão */
+        
     
    } 
 
